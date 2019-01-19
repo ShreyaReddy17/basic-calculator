@@ -1,0 +1,22 @@
+<html>
+    <h1>Home page</h1>
+    <form action={% url 'calci' %}>
+    <div class="radio">
+        <label><input type="radio" name="optradio" value='+' checked>sum</label>
+    </div>
+      <div class="radio">
+        <label><input type="radio" name="optradio" value='-'>difference</label>
+      </div>
+      <div class="radio disabled">
+        <label><input type="radio" name="optradio" value='*'>product</label>
+      </div>
+      <div class="radio disabled">
+        <label><input type="radio" name="optradio" value='/' >quotient</label>
+      </div>
+      <br/>
+    <input name='field1'></input>
+    <input name='field2'></input>
+    <button type="submit" class='btn btn-primary'>SUBMIT</button>
+    </form>
+
+      </html>
